@@ -1,0 +1,60 @@
+openapi: "3.0.1"
+info:
+  title: "Events_api"
+  description: "api for events"
+  version: "2023-07-01T11:28:54Z"
+servers:
+- url: "https://f508z0plvb.execute-api.eu-west-2.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "evenst"
+paths:
+  /events:
+    get:
+      responses:
+        "599":
+          description: "599 response"
+          content: {}
+      security:
+      - auth1: []
+    post:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+      security:
+      - auth1: []
+    delete:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+      security:
+      - auth1: []
+    patch:
+      responses:
+        "200":
+          description: "200 response"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Empty"
+      security:
+      - auth1: []
+components:
+  schemas:
+    Empty:
+      title: "Empty Schema"
+      type: "object"
+  securitySchemes:
+    auth1:
+      type: "apiKey"
+      name: "authorizationToken"
+      in: "header"
+      x-amazon-apigateway-authtype: "custom"
