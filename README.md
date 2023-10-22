@@ -1,4 +1,4 @@
-# Sistem-Based-a-Microsservices-with-Serverless-Architecture
+# System-Based-a-Microsservices-with-Serverless-Architecture
 The main objective of this project is the study of microservices technologies and the implementation of a system based on microservices with serverless architecture for event management.
 
 
